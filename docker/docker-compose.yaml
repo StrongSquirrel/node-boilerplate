@@ -1,0 +1,14 @@
+app:
+  image: node:8.4.0-alpine
+  restart: always
+  volumes:
+    - ./../:/www
+    - ./start.sh:/usr/local/start.sh
+  working_dir: /www
+  entrypoint: /usr/local/start.sh
+  ports:
+    - "127.0.0.1:${APP_PORT}:8080"
+  env_file:
+    - .env
+  environment:
+    DATABASE_URL: ${DATABASE_URL}

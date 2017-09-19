@@ -1,0 +1,7 @@
+{
+  "port": "PORT",
+  "database": {
+    "url": "DATABASE_URL"
+  },
+  "sessionSecret": "SESSION_SECRET"
+}

@@ -1,0 +1,23 @@
+<form action="/login" method="post">
+Hello {{ message }}
+<input name="email"  value="{{validationErrors.email.value}}"/>
+{% if validationErrors.email %}
+  {{ validationErrors.email.message }}
+{% endif %}
+<input name="password" type="password"/>
+{% if validationErrors.password %}
+  {{ validationErrors.password.message }}
+{% endif %}
+<input type="submit" value="Login"/>
+</form>
+<form action="/audio" method="post" enctype="multipart/form-data">
+<input name="file" type="file"/>
+{% if validationErrors.file %}
+  {{ validationErrors.file.message }}
+{% endif %}
+<input name="duration" type="number"/>
+{% if validationErrors.duration %}
+  {{ validationErrors.duration.message }}
+{% endif %}
+<input type="submit" value="Upload"/>
+</form>

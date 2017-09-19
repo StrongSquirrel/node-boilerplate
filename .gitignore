@@ -1,0 +1,9 @@
+.vscode
+/dist
+/logs
+/tmp
+/npm-debug.log
+/node_modules
+/config/local.json
+/config/local-*.json
+/docker/.env

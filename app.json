@@ -1,0 +1,12 @@
+{
+  "apps": [
+    {
+      "name": "node-boilerplate",
+      "script": "dist/server.js",
+      "env": {},
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
