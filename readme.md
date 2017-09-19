@@ -51,7 +51,7 @@ yarn start:prod
 
 ### Docker
 
-To start application in docker we need copy env-file `APP/dev/docker/.env.example` to `APP/dev/docker/.env` and edit `APP/dev/docker/.env` file.
+To start application in docker we need copy env-file `APP/docker/.env.example` to `APP/docker/.env` and edit `APP/docker/.env` file.
 
 After edit env-file to start an application run following command:
 
